@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "BDS", :file => "LICENSE" }
   s.author             = { "Shubhakeerti" => "shubhakeerti.alagundagi@gmail.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "http://github.com/Shubhakeerti/CustomRestKit-V0.9.3.git", :tag => "0.9.3" }
+  s.source       = { :git => "http://github.com/Shubhakeerti/CustomRestKit-V0.9.3.git", :tag => "s.version.to_s" }
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
 end
