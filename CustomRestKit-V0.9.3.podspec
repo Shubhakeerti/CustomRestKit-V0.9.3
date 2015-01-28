@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "http://github.com/Shubhakeerti/CustomRestKit-V0.9.3.git", :tag => "s.version.to_s" }
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
-
   # Exclude optional Search and Testing modules
   s.default_subspec = 'Core'
 
@@ -40,8 +39,8 @@ Pod::Spec.new do |s|
   cs.dependency 'RestKit/CoreData'
   end
 
-s.subspec 'ObjectMapping' do |os|
-os.source_files   = 'Code/ObjectMapping.h', 'Code/ObjectMapping'
+  s.subspec 'ObjectMapping' do |os|
+  os.source_files   = 'Code/ObjectMapping.h', 'Code/ObjectMapping'
 os.dependency       'RestKit/Support'
 os.dependency       'RKValueTransformers', '~> 1.1.0'
 os.dependency       'ISO8601DateFormatterValueTransformer', '~> 0.6.0'
