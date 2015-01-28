@@ -13,7 +13,7 @@ s.version = '0.0.1'
 s.summary = 'RestKit is a framework for consuming and modeling RESTful web resources on iOS and OS X.'
 s.homepage = 'http://www.restkit.org'
 s.author = { 'Shubhakeerti' => 'shubhakeerti.alagundagi@gmail.com' }
-s.source = { :git => 'https://github.com/Shubhakeerti/CustomRestKit-V0.9.3', :head }
+s.source = { :git => 'https://github.com/Shubhakeerti/CustomRestKit-V0.9.3'}
 s.requires_arc = true
 # It has no source_files itself, so the resolver should not allow dependencies on this spec unless it’s a `part_of' type dependency
 
