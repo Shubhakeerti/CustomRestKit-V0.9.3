@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A short description of CustomRestKit-V0.9.3."
   s.homepage     = "http://github.come/Shubhakeerti/CustomRestKit-V0.9.3"
-  s.license      = { :type => "BDS", :file => "LICENSE" }
+  s.license      = { :type => "New BDS license", :file => "LICENSE" }
   s.author             = { "Shubhakeerti" => "shubhakeerti.alagundagi@gmail.com" }
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "6.0"
   s.source       = { :git => "http://github.com/Shubhakeerti/CustomRestKit-V0.9.3.git", :tag => "s.version.to_s" }
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
