@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   # Add Core Data to the PCH if the Core Data subspec is imported. This enables conditional compilation to kick in.
   s.prefix_header_contents = <<-EOS
-  #if __has_include("RKCoreData.h")
+  #if __has_include("CoreData.h")
   #import <CoreData/CoreData.h>
   #endif
   EOS
@@ -51,7 +51,6 @@ ns.source_files   = 'Code/Network.h', 'Code/Network'
 ns.ios.frameworks = 'CFNetwork', 'Security', 'MobileCoreServices', 'SystemConfiguration'
 ns.osx.frameworks = 'CoreServices', 'Security', 'SystemConfiguration'
 ns.dependency       'SOCKit'
-ns.dependency       'AFNetworking', '~> 1.3.0'
 ns.dependency       'RestKit/ObjectMapping'
 ns.dependency       'RestKit/Support'
 
