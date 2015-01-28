@@ -29,10 +29,7 @@ s.subspec 'Network' do |ns|
 ns.description = 'The network layer provides a request/response abstraction on top of NSURLConnection.'
 ns.dependency 'LibComponentLogging-NSLog'
 ns.source_files = 'Code/RestKit.h', 'Code/{Network,Support}/*.{h,m}'
-if config.ios?
 ns.frameworks = 'CFNetwork', 'Security', 'MobileCoreServices', 'SystemConfiguration'
-else
-ns.frameworks = 'CoreServices', 'Security', 'SystemConfiguration'
 end
 end
 
