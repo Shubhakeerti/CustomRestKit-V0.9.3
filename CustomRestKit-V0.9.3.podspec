@@ -42,8 +42,6 @@ Pod::Spec.new do |s|
   s.subspec 'ObjectMapping' do |os|
   os.source_files   = 'Code/ObjectMapping.h', 'Code/ObjectMapping'
 os.dependency       'RestKit/Support'
-os.dependency       'RKValueTransformers', '~> 1.1.0'
-os.dependency       'ISO8601DateFormatterValueTransformer', '~> 0.6.0'
 end
 
 s.subspec 'Network' do |ns|
@@ -100,7 +98,6 @@ end
 
 s.subspec 'Support' do |ss|
 ss.source_files   = 'Code/RestKit.h', 'Code/Support.h', 'Code/Support', 'Vendor/LibComponentLogging/Core'
-ss.dependency 'TransitionKit', '~> 2.1.0'
 end
 
 end
